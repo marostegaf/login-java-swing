@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginn.loginn.HelloController">
+   <left>
+      <AnchorPane prefHeight="470.0" prefWidth="326.0" style="-fx-background-color: #6f4cbb;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="155.0" prefHeight="60.0" prefWidth="247.0" text="MarostegaBank" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <HBox layoutX="14.0" layoutY="14.0" spacing="5.0">
+               <children>
+                  <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#btnCloseOnAction" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#fddb2d" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#27c241" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Label layoutX="77.0" layoutY="426.0" text="Great bank for great people" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="470.0" prefWidth="384.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="telaPrincipal" prefHeight="470.0" prefWidth="375.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <PasswordField layoutX="65.0" layoutY="191.0" prefHeight="35.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #6f4cbb; -fx-border-width: 0px 0px 2px;" />
+                  <Label layoutX="65.0" layoutY="272.0" prefHeight="17.0" prefWidth="132.0" text="Forgot password?" textFill="#948c8c" />
+                  <Button layoutX="188.0" layoutY="264.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #6f4cbb; -fx-text-fill: #ffffff;" text="Sign In" />
+                  <Button fx:id="registrarButton" layoutX="65.0" layoutY="394.0" mnemonicParsing="false" onAction="#registrarButtonOnAction" opacity="0.82" prefHeight="44.0" prefWidth="246.0" style="-fx-background-color: #d5cbeb; -fx-background-radius: 5; -fx-text-fill: #6f4cbb; -fx-border-color: #6f4cbb; -fx-border-radius: 5;" text="Don't have an account? Sign Up" />
+                  <TextField layoutX="65.0" layoutY="134.0" prefHeight="35.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #6f4cbb; -fx-border-width: 0px  0px 2px;" />
+                  <Label layoutX="66.0" layoutY="81.0" text="Sign In">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="telaSecundaria" prefHeight="470.0" prefWidth="374.0" visible="false">
+               <children>
+                  <Label layoutX="55.0" layoutY="100.0" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="187.0" layoutY="235.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: #6f4cbb; -fx-text-fill: #ffffff;" text="Get Started" />
+                  <Label layoutX="145.0" layoutY="412.0" text="Welcome!" textFill="#6d4cbac4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnVoltar" layoutX="315.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnVoltarOnAction" prefHeight="36.0" prefWidth="38.0" style="-fx-background-color: #ffffff;" text="&lt;" textFill="#6f4cbb">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField layoutX="55.0" layoutY="167.0" prefHeight="35.0" prefWidth="250.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #6f4cbb; -fx-border-width: 0px  0px 2px;" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
